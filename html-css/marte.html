@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        body {
+            background-color: green;
+            color: white;
+            font-family: Helvetica;
+        }
+
+        strong {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Descrube tu peso en otros planetas que no son la tierra</h1>
+    <p>Para eso no tienes que indicar <strong> tu peso</strong></p>
+
+
+
+
+    <script type="text/javascript">
+        alert("Nos tienes que dar tu peso");
+        var peso = prompt("Dinos tu peso actual : ")
+        var planet = prompt("Dinos tu Planeta : ")
+        // planetas a trabajar: todos los del sistema solar
+
+        pesoPlanet = planetWeight(planet, peso)
+        pesoPlanet = parseInt(pesoPlanet);
+        if (pesoPlanet == 0) {
+
+        } else {
+            document.write("tu peso en " + planet + " es " + pesoPlanet);
+        }
+        // ensayo y error
+
+        function planetWeight(planet, peso) {
+            var g_tierra = 9.8;
+            var planetWeight;
+            switch (planet) {
+                case "mercurio":
+                    planetWeight = 3.7 * peso / g_tierra;
+                    break;
+                case "venus":
+                    planetWeight = 8.87 * peso / g_tierra;
+                    break;
+                case "marte":
+                    planetWeight = 3.711 * peso / g_tierra;
+                    break;
+                case "jupiter":
+                    planetWeight = 28.4 * peso / g_tierra;
+                    break;
+                case "saturno":
+                    planetWeight = 10.44 * peso / g_tierra
+                    break;
+                case "urano":
+                    planetWeight = 8.7 * peso / g_tierra;
+                    break;
+                case "neptuno":
+                    planetWeight = 11.15 * peso / g_tierra;
+                    break;
+                case "pluton":
+                    return 0.62 * peso / g_tierra;
+                    break;
+                case "mercurio":
+                    planetWeight = peso;
+                    break;
+                default:
+                    planetWeight = 0;
+                    break;
+            }
+            console.log(planetWeight);
+            return planetWeight;
+        }
+    </script>
+
+</body>
+
+</html>
