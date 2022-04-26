@@ -9,10 +9,10 @@ about:blank
 ```javascript
 var name = prompt("Ingresa tu nombre?")
 console.log(name)
-alter("Hola Mundo!!!! "+ name)
+alter("Hola Mundo Mamá !!!! "+ name)
 ```
 
-### Push Code
+## Push Code
 
 ```sh
  git add .; git commit -m "feat: util html"; git push
