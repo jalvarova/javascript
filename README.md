@@ -12,7 +12,11 @@ console.log(name)
 alter("Hola Mundo!!!! "+ name)
 ```
 
+### Push Code
 
+```sh
+ git add .; git commit -m "feat: util html"; git push
+```
 
 ## References
 
