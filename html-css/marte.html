@@ -36,11 +36,10 @@
         pesoPlanet = planetWeight(planet, peso)
         pesoPlanet = parseInt(pesoPlanet);
         if (pesoPlanet == 0) {
-
+            document.write("<strong>Tu peso es 0 Kilos</strong>");
         } else {
-            document.write("tu peso en " + planet + " es " + pesoPlanet);
+            document.write("tu peso en <strong>" + planet + "</strong> es " + pesoPlanet + "Kilos");
         }
-        // ensayo y error
 
         function planetWeight(planet, peso) {
             var g_tierra = 9.8;
