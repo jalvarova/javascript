@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Keybard</title>
+</head>
+
+<body>
+    <p>Mueve las teclas para dibujar</p>
+    <input id="bulk" type="range" oninput="defbulk(this.value)" min="1" max="5" value="1">
+    <input id="color" type="color" oninput="defcolor(this.value)" placeholder="Ingresa el valor" />
+    <input id="btnClean" type="button" value="clean"/>
+    <br>
+    <canvas id="graph" width="500" height="500" style="border: aquamarine; background-color: yellow;"></canvas>
+
+    <script src="../js/event-mouse.js"></script>
+</body>
+
+</html>

@@ -7,7 +7,7 @@ var keyboard = {
     DOWN: 40,
 };
 
-document.addEventListener("keyup", graphKeyBoard)
+document.addEventListener("keydown", graphKeyBoard)
 var graph = document.getElementById("graph");
 var paper = graph.getContext("2d");
 var txtNumber = document.getElementById("txtNumber");
