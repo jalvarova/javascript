@@ -3,7 +3,21 @@ const app = express()
 const port = 3000
 
 app.get('/', function (req, res) {
-    res.send('Hello World')
+    var contador = 2;
+    var na = "na";
+    while (contador) {
+        na += na;
+        contador -= 1;
+    }
+    console.log(req.params, na + " Walvao ")
+
+    var paki = {
+        nombre: "Pakiman",
+        ataque: 101
+    };
+    paki.ataque = paki.ataque * 2;
+
+    res.send('Hello World ' + contador + " " + paki.ataque + " " + Math.ceil(4.64));
 })
 
 
