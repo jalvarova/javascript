@@ -6,6 +6,18 @@ Lenguaje de programación ligero, interpretado o compiilado.
 about:blank
 ```
 
+
+
+### Asignación de variables
+
+```javascript
+var variable = 13223;
+let scope = "Jorge";
+const constante = 3.1416
+
+```
+
+### Alert input var
 ```javascript
 var name = prompt("Ingresa tu nombre?")
 console.log(name)

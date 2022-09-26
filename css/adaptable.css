@@ -1,0 +1,14 @@
+div {
+    width: 150px;
+    height: 130px;
+    border: 2px solid #000;
+
+    background-image: url('https://www.freeiconspng.com/uploads/pikachu-png-icon-6.png');
+
+    resize: both;
+
+    overflow: auto;
+
+    background-repeat: space;
+}
+

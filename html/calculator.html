@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>CodePen - Log-in</title>
+
+</head>
+
+<body>
+
+    <h1> Caluladora WEB</h1>
+    <form>
+        <input type="text" name="number1" id="number1" placeholder="Number1">
+        <input type="text" name="number2" id="number2" placeholder="Number2">
+        <input type="button" name="suma" value="+" onClick="printResultSum()" />
+        <input type="button" name="resta" value="-" onClick="printResultRest()" />
+        <input type="button" name="division" value="%" onClick="printResultDivision()" />
+        <input type="button" name="multiply" value="x" onClick="printResultMultiply()" />
+
+        <p>Result : <span id="result"></span></p>
+    </form>
+
+    <script>
+        function printResultSum() {
+            validateInput()
+            var numuber1 = parseInt(document.getElementById('number1').value)
+            var numuber2 = parseInt(document.getElementById('number2').value)
+            document.getElementById("result").innerHTML = numuber1 + numuber2;
+        }
+
+        function printResultRest() {
+            validateInput()
+            var numuber1 = parseInt(document.getElementById('number1').value)
+            var numuber2 = parseInt(document.getElementById('number2').value)
+            document.getElementById("result").innerHTML = numuber1 - numuber2;
+        }
+
+        function printResultMultiply() {
+            validateInput()
+            var numuber1 = parseInt(document.getElementById('number1').value)
+            var numuber2 = parseInt(document.getElementById('number2').value)
+            document.getElementById("result").innerHTML = numuber1 * numuber2;
+        }
+
+        function printResultDivision() {
+            validateInput()
+            var numuber1 = parseInt(document.getElementById('number1').value)
+            var numuber2 = parseInt(document.getElementById('number2').value)
+            document.getElementById("result").innerHTML = (numuber1 / numuber2).toFixed(2);
+        }
+
+        function validateInput() {
+
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+
+            if (isNotEmpty(number1)) {
+                alert("Please enter the number1.");
+                return false;
+            }
+            if (isNotEmpty(number2)) {
+                alert("Please enter the number2.");
+                return false;
+            }
+        };
+
+        function isNotEmpty(cadena) {
+            return cadena == null || cadena == ""
+        };
+    </script>
+</body>
+
+</html>
