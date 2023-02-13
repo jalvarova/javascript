@@ -36,5 +36,5 @@ function validateInput(){
 }
 
 function isNotEmpty(cadena){
-    return cadena == null || cadena == ""
+    return cadena == null| cadena == ""
 }

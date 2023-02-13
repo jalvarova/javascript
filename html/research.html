@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/movies.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1 class="title">Buscador de peliculas</h1>
+
+    <form data-testid="form" class="search">
+        <input type="text" placeholder="Search....">
+        <input type="button" id="search" value="Buscar">
+    </form>
+    <ul id="movies" class="movies">
+    </ul>
+</body>
+<script>
+
+    const bucketImage = [
+        "https://pixabay.com/get/g747eb86b50148b974d525257ed7c4140263f733bd7973300b30a18cabfa89ff4582f93277c950bbbe77c4924a9b579bc7d2d7e9cd899c3f3492f96c26dccbea678324ac9be6c0d22db117adf507256f9_1280.png",
+        "https://pixabay.com/get/g9467c3730b2827787ced9cf3797ee6215d1773c8340cff5933987bb20365d18a093c942d0b642397bd21b7ad4902b5f7230db71811fb93d2cf39f8c6d5af396724533da3f25979a56d47f3955433910f_1280.png",
+        "https://pixabay.com/get/ga8fb0f9d10caa0a21ed8419a640c0280637bc2462d0a790e985c72071855f1103a57d982268cfa5ce375197863195903ca520e9496ff7c13383301a0dbef27b58f282d932923649796008f78233ca2a8_1280.jpg",
+        "https://pixabay.com/get/ge3b61cc354b623602498f40cfd34633e6b600301e2d2239255499dc5599c6c41aad2b81f877227f3242d69925b4fc39fc986232f4021acff3cdf614bd370c8cc23658f5de57cfa010c480a211a287cf2_640.jpg",
+        "https://pixabay.com/get/g840e19ac42b9064528d0b96f09bc7f4ef3eaffdc6e7debeb7db4ac9449fa446f3c616623284f789ccf2317d0fbd027c50ddb20dc10b9853add1c54cc1044135489bcb23ea9b7ce70d477a1d51a847591_1280.jpg",
+        "https://pixabay.com/get/gc6ab79d65ad4db6f369f883c2211d791af434164c5abddfa92a2c0683a0b5febc0ce92e002a825ca0e3c93a28278b756284ec10951ab15d0f66a4c6c2d5f7a248965b15749017e96d91e0e04c22f1ae2_1280.jpg"
+    ]
+
+    var moviesList = document.getElementById("movies");
+
+    bucketImage.forEach(image => {
+        console.log(image)
+        var li = document.createElement("li");
+        li.innerHTML = "<img class='movie-poster' src=" + image + ">"
+        moviesList.appendChild(li);
+    });
+
+</script>
+
+</html>
