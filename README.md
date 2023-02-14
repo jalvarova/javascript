@@ -27,7 +27,7 @@ alter("Hola Mundo Mamá !!!! "+ name)
 ## Push Code
 
 ```sh
- git add .; git commit -m "feat: util html"; git push
+git add .; git commit -m "feat: util html"; git push
 ```
 
 ## References

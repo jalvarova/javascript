@@ -4,15 +4,15 @@ body {
 
 .title {
     text-align: center;
-    color: hsl(0, 0%, 28%);
-    font-size: 40px;
+    color: hsl(10, 10%, 78%);
+    font-size: 30px;
     font-weight: bold;
     font-family: monospace;
     letter-spacing: 7px;
     cursor: pointer;
     text-transform: uppercase;
-    padding: 64px;
-    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    padding: 7px;
+    background: linear-gradient(to right, hsl(0, 0%, 100%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 3s infinite linear;
@@ -22,11 +22,11 @@ body {
     0% {
       background-position: 0;
     }
-    60% {
-      background-position: 800px;
+    100% {
+      background-position: 1200px;
     }
     100% {
-      background-position: 800px;
+      background-position: 1200px;
     }
   }
 
