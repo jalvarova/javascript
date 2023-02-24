@@ -57,6 +57,8 @@ function validate() {
         document.writeln("<a href=\"util/loader.html\"/>Loader</a>");
         document.writeln("</li><li>");
         document.writeln("<a href=\"util/adapteble-img.html\"/>Adaptable</a>");
+        document.writeln("</li><li>");
+        document.writeln("<a href=\"html/button.html\"/>Buttons</a>");
         document.writeln("</li>");
         document.writeln("</ul>");
         document.writeln("<a href='index.html'>Return</a>");
